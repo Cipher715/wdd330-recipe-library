@@ -65,10 +65,11 @@ export default class RecipeDetail {
     async addBookmark(){
         let currentBookmark = await getLocalStorage("bookmark");
         let recipes = [];
+        const isAlreadyAdded = false;
         if (currentBookmark != null) {
+            isAlreadyAdded = currentBookmark.some(item => item.idMeal === this.recipe.idMeal);
             recipes = currentBookmark;
         }
-        const isAlreadyAdded = currentBookmark.some(item => item.idMeal === this.recipe.idMeal);
         if(isAlreadyAdded){
             alertMessage(`${this.recipe.strMeal} is already added to bookmark!`);
         }else {
