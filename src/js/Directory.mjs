@@ -5,12 +5,10 @@ const detail = new RecipeDetail(".recipeDetail");
 const service= new ExternalServices();
 
 export default class Directory {
-    constructor(ingredients, categories, areas){
-        this.ingredients = ingredients;
-        this.categories = categories;
-        this.areas = areas;
-    }
     async init(){
+        this.ingredients = await service.getIngredientList();
+        this.categories = await service.getCategoryList();
+        this.areas = await service.getAreaList();
         this.getFilters();
     }
     reset(){

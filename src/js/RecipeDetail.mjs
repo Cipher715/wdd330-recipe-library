@@ -63,7 +63,6 @@ export default class RecipeDetail {
     }
 
     async addBookmark(){
-
         let currentBookmark = await getLocalStorage("bookmark");
         let recipes = [];
         if (currentBookmark != null) {

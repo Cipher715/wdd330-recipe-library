@@ -1,12 +1,9 @@
 import { loadHeaderFooter } from "./utils.mjs";
-import ExternalServices from "./ExternalServices.mjs";
 import RecipeDetail from "./RecipeDetail.mjs";
+import Welcome from "./Welcome.mjs";
 
-const service = new ExternalServices();
+const welcome = new Welcome();
 
 loadHeaderFooter();
 
-const recipe = await service.getRandomRecipe();
-const detail = new RecipeDetail();
-
-detail.init(recipe);
+welcome.init();
