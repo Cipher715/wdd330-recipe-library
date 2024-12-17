@@ -55,6 +55,7 @@ nav a:hover {
   font-size: 30px;
   text-align: right;
   font-family: var(--heading-font);
+  font-weight: bold;
   padding-left: 5%;
   gap: 2vw;
 }
@@ -114,7 +115,8 @@ nav a:hover {
 }
 
 .recipe-detail img {
-  height: 300px;
+  width: 200px;
+  height: auto;
   box-shadow: 0 0 30px #777;
   margin: .5rem;
 }
@@ -124,7 +126,7 @@ nav a:hover {
   text-align: right;
 }
 
-#favorite {
+#favorite, #unFavorite{
   background-color: rgb(252, 252, 157);
   padding: .5vw .5vw .5vw .5vw;
   border: thin rgb(212, 170, 103);
@@ -170,7 +172,12 @@ nav a:hover {
 }
 
 .recipeMessage {
-  margin-left: 1rem;
+  margin: 0 auto;
+  width: 80%;
+}
+.removeBookmark {
+  margin: 0 auto;
+  width: 80%;
 }
 
 .alert {
@@ -186,6 +193,7 @@ nav a:hover {
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 1rem;
   gap: 2vw;
+  background-color: var(--accent2-color);
 }
 
 .selector div{
@@ -209,4 +217,5 @@ nav a:hover {
 
 footer {
   padding: 1em;
+  text-align: center;
 }

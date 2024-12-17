@@ -29,7 +29,7 @@ export class Bookmark {
         let recipeMessage = document.querySelector('.recipeMessage');
         let recipeList = document.querySelector('.recipeList');
         let message = document.createElement('h3');
-        message.textContent = "Click image to see the details";
+        message.textContent = "Here are your favorites!";
         recipeMessage.appendChild(message);
         list.forEach(recipe => {
             let article = document.createElement('article');
