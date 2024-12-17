@@ -65,7 +65,7 @@ export default class RecipeDetail {
     async addBookmark(){
         let currentBookmark = await getLocalStorage("bookmark");
         let recipes = [];
-        const isAlreadyAdded = false;
+        let isAlreadyAdded = false;
         if (currentBookmark != null) {
             isAlreadyAdded = currentBookmark.some(item => item.idMeal === this.recipe.idMeal);
             recipes = currentBookmark;
