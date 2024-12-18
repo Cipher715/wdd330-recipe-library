@@ -10,6 +10,7 @@ export default class Directory {
         this.categories = await service.getCategoryList();
         this.areas = await service.getAreaList();
         this.getFilters();
+        document.querySelector('.recipeMessage').innerHTML = "<h2>Select a filter to show recipes.</h2>";
     }
     reset(){
         document.querySelector('.recipeList').innerHTML = "";

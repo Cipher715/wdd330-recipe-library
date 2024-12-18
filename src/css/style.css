@@ -80,6 +80,15 @@ nav a:hover {
   background-color: white;
 }
 
+h2 {
+  text-align: center;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .welcome {
   text-align: center;
 }
@@ -134,6 +143,11 @@ nav a:hover {
   margin-right: 5%;
 }
 
+#unFavorite{
+  background-color: pink;
+}
+
+
 .recipeList {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -174,6 +188,10 @@ nav a:hover {
 .recipeMessage {
   margin: 0 auto;
   width: 80%;
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
 }
 .removeBookmark {
   margin: 0 auto;
@@ -191,7 +209,8 @@ nav a:hover {
 .selector {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   gap: 2vw;
   background-color: var(--accent2-color);
 }
